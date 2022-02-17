@@ -1,0 +1,42 @@
+.intro1 {
+    font-size: 30px;
+    font-family: 'JSongMyung-Regular-KO';
+    margin: 70px 0px 0px 300px;
+}
+.intro2{
+    font-size: 20px;
+    font-family: 'JSongMyung-Regular-KO';
+    margin: 0px 0px 50px 300px;
+}
+.Title{
+    margin: 0px 0px 20px 300px;
+    background-color: #FAF8EB;
+    width: 700px;
+}
+.Body{
+    margin: 0px 0px 20px 300px;
+    justify-content: center;
+    background-color: #FAF8EB;
+    width: 1000px;
+    height: 500px;
+}
+.chinese{
+    font-family: 'chinese';
+    font-size: 25px;
+    margin: 0px 0px 50px 50px;
+}
+.chinese1{
+    font-family: 'chinese';
+    font-size: 25px;
+    margin: 0px 0px 50px 0px;
+}
+.korean{
+    font-family: 'JSongMyung-Regular-KO';
+    font-size: 20px;
+}
+.SaveButton{
+    font-family: 'JSongMyung-Regular-KO';
+    margin: 0px 220px 0px 0px;
+    font-size: 20px;
+    float: right;
+}

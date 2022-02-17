@@ -1,0 +1,88 @@
+.notmain-sub-header{
+    font-family: 'chinese';
+    color: #4A544A;
+    font-size: 10px;
+    margin: 20px 0px 0px;
+}
+.notmain-header{
+    margin: 5px 0px 20px;
+    color: #4A544A; 
+    font-size: 30px;
+    font-family: 'JSongMyung-Regular-KO';
+    text-shadow: 2px 2px 0px #849d6A;
+}
+.InputIDBox{
+    margin: 200px 0px 30px 0px;
+    height: 30px;
+}
+.ID{
+    font-size: 30px;
+    font-family: 'JSongMyung-Regular-KO';
+}
+.IDbox{
+    margin: 0px 0px 0px 20px;
+    background-color: #fcfaf1;
+    height: 40px;
+    width: 200px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 2;
+}
+.InputPWBox{
+    margin: 0px 0px 20px 0px;
+}
+.PW{
+    font-size: 30px;
+    font-family: 'JSongMyung-Regular-KO';
+}
+.PWbox{
+    margin: 0px 0px 0px 20px;
+    background-color: #fcfaf1;
+    height: 40px;
+    width: 200px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 2;
+}
+.login-button2{
+    border: none;
+    border-radius: 35px;
+    color: #4A544A;
+    background-color: transparent;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    font-family: 'JSongMyung-Regular-KO';
+}
+.login-button2:hover{
+    border: none;
+    border-radius: 35px;
+    color:#FFD06A;
+    background-color: transparent;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    font-family: 'JSongMyung-Regular-KO';
+}
+.joinbutton{
+    border: none;
+    border-radius: 35px;
+    color:#4A544A;
+    background-color: transparent;
+    font-size: 20px;
+    width: 200px;
+    height: 20px;
+    font-family: 'JSongMyung-Regular-KO';
+}
+.joinbutton:hover{
+    border: none;
+    border-radius: 35px;
+    color:#FFD06A;
+    background-color: transparent;
+    font-size: 20px;
+    width: 200px;
+    height: 20px;
+    font-family: 'JSongMyung-Regular-KO';
+}
