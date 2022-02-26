@@ -8,6 +8,7 @@ const InputItem=(props)=>{
             <span className="Angry">노 : {props.angry}</span>
             <span className="Sad">애 : {props.sad}</span>
             <span className="Joy">락 : {props.joy}</span>
+            <div className="Date">날짜 : {props.date}</div>
             <div className="title">제목: {props.title}</div>
             <div className="body">내용 : {props.body}</div>
             <button onClick={props.onDeleteClick}>삭제</button>

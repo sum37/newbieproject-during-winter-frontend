@@ -1,42 +1,39 @@
-.intro1 {
-    font-size: 30px;
+.Entire {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fcfaf1;
+}
+.header {
+    margin: 20px 0px 20px;
+    color: #4A544A; 
+    font-size: 150px;
     font-family: 'JSongMyung-Regular-KO';
-    margin: 70px 0px 0px 300px;
+    text-shadow: 5px 5px 0px #849d6A;
 }
-.intro2{
-    font-size: 20px;
-    font-family: 'JSongMyung-Regular-KO';
-    margin: 0px 0px 50px 300px;
-}
-.Title{
-    margin: 0px 0px 20px 300px;
-    background-color: #FAF8EB;
-    width: 700px;
-}
-.Body{
-    margin: 0px 0px 20px 300px;
-    justify-content: center;
-    background-color: #FAF8EB;
-    width: 1000px;
-    height: 500px;
-}
-.chinese{
+.sub-header {
     font-family: 'chinese';
-    font-size: 25px;
-    margin: 0px 0px 50px 50px;
+    color: #4A544A;
+    font-size: 40px;
+    margin: 180px 0px 0px;
 }
-.chinese1{
-    font-family: 'chinese';
-    font-size: 25px;
-    margin: 0px 0px 50px 0px;
-}
-.korean{
+.login-button {
+    border: none;
+    border-radius: 35px;
+    color:#4A544A;
+    background-color: transparent;
+    font-size: 35px;
+    width: 200px;
+    height: 60px;
     font-family: 'JSongMyung-Regular-KO';
-    font-size: 20px;
 }
-.SaveButton{
+.login-button:hover{
+    border: none;
+    border-radius: 35px;
+    color:#FFD06A;
+    background-color: transparent;
+    font-size: 35px;
+    width: 200px;
+    height: 60px;
     font-family: 'JSongMyung-Regular-KO';
-    margin: 0px 220px 0px 0px;
-    font-size: 20px;
-    float: right;
 }

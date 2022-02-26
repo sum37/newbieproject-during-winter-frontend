@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import InputItem from "../component/InputItem";
 import './write.css';
 import { Link } from 'react-router-dom';
+import ReactDatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const happys = ["0", "1", "2", "3", "4", "5"];
 const angrys = ["0", "1", "2", "3", "4", "5"];
@@ -12,18 +13,18 @@ const joys = ["0", "1", "2", "3", "4", "5"];
 export default function WritePage(){
 
     const [input, setInput] = useState([]);
-    const [saveTitle, setSaveTitle] = useState("");
-    const [saveBody, setSaveBody] = useState("");
 
+    const [date, setDate] = useState(new Date());
     const [happy, setHappy] = useState("0");
     const [angry, setAngry] = useState("0");
     const [sad, setSad] = useState("0");
     const [joy, setJoy] = useState("0");
-    
-
+    const [saveTitle, setSaveTitle] = useState("");
+    const [saveBody, setSaveBody] = useState("");
     
     const onSaveClick = () => {
         axios.post('/api/write', {
+            date: date,
             happy: happy,
             angry: angry,
             sad: sad,
@@ -34,6 +35,7 @@ export default function WritePage(){
         .then(() => axios.get('/api/write'))
         .then(response => {
             setInput(response.data);
+            setDate("");
             setHappy("0");
             setAngry("0");
             setSad("0");
@@ -48,15 +50,18 @@ export default function WritePage(){
 
     return (
         <div>
-            <div className="Entire">
-                <p className="notmain-sub-header">喜 怒 哀 樂</p>
-                <h1 className="notmain-header">희 노 애 락</h1>
-            </div>
             <div>
                 <h1 className="intro1">오늘 하루는 어땠나요?</h1>
                 <h2 className="intro2">각각의 감정을 느낀 정도를 숫자를 통해 표현해보세요.</h2>
             </div>
             <div className="Entire">
+                <label className="date"> 날짜: </label>
+                <ReactDatePicker
+                    dateFormat="yyyy년 MM월 dd일"
+                    value={date}
+                    onChange={v => setDate(v.target.value)}
+                    required/>
+
                 <span className="happy">
                     <label className="chinese1"> 喜 </label>
                     <label className="korean"> (희) </label>
@@ -89,6 +94,7 @@ export default function WritePage(){
                     </>    
                     ))}
                 </span>
+                <br />
                 <span className="sad">
                     <label className="chinese"> 哀 </label>
                     <label className="korean"> (애) </label>

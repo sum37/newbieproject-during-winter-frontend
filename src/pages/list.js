@@ -4,7 +4,6 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 
-
 function ListPage(){
     const [input, setInput] = useState([]);
     useEffect(() => {
@@ -40,10 +39,6 @@ function ListPage(){
     ));
     return(
         <div>
-            <div className="Entire">
-                <p className="notmain-sub-header">喜 怒 哀 樂</p>
-                <h1 className="notmain-header">희 노 애 락</h1>
-            </div>
             <h1>지난 기록을 살펴보세요.</h1>
             {ListUp}
             <div>
