@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './switcher.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './switcher.scss';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -25,22 +25,22 @@ export default function WritePage(){
     
     const onSaveClick = () => {
         axios.post('/api/write', {
-            date: date,
             happy: happy,
             angry: angry,
             sad: sad,
             joy: joy,
+            date: date,
             title: saveTitle,
             body : saveBody
         })
         .then(() => axios.get('/api/write'))
         .then(response => {
             setInput(response.data);
-            setDate("");
             setHappy("0");
             setAngry("0");
             setSad("0");
             setJoy("0");
+            setDate(new Date());
             setSaveTitle("");
             setSaveBody("");
             console.log(response.data)
@@ -60,9 +60,10 @@ export default function WritePage(){
                 <label className="date"> 날짜: </label>
                 <ReactDatePicker
                     dateFormat="yyyy년 MM월 dd일"
-                    value={date}
-                    onChange={v => setDate(v.target.value)}
-                    required/>
+                    maxDate={new Date()}
+                    selected={date}
+                    onChange={(date)=>setDate(date)}
+                    />
 
                 <span className="happy">
                     <label className="chinese1"> 喜 </label>
