@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import InputItem from "../component/InputItem";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import TopBanner from "../component/top";
 
 
 function ListPage(){
@@ -39,6 +40,7 @@ function ListPage(){
     ));
     return(
         <div>
+          <TopBanner />
             <h1>지난 기록을 살펴보세요.</h1>
             {ListUp}
             <div>

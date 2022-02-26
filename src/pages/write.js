@@ -4,6 +4,7 @@ import './write.css';
 import { Link } from 'react-router-dom';
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import TopBanner from "../component/top";
 
 const happys = ["0", "1", "2", "3", "4", "5"];
 const angrys = ["0", "1", "2", "3", "4", "5"];
@@ -50,6 +51,7 @@ export default function WritePage(){
 
     return (
         <div>
+            <TopBanner />
             <div>
                 <h1 className="intro1">오늘 하루는 어땠나요?</h1>
                 <h2 className="intro2">각각의 감정을 느낀 정도를 숫자를 통해 표현해보세요.</h2>
