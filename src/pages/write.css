@@ -1,4 +1,95 @@
-.Entire {
+.WritePage{
+    width: 100%;
+    height: 1000px;
+    align-items: center;
+    justify-content:space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+.intro{
+    width: 70%;
+}
+.intro-item1{
+    font-family: 'JSongMyung-Regular-KO';
+}
+.intro-item2{
+    font-family: 'JSongMyung-Regular-KO';
+}
+.InputSection{
+    width:70%;
+}
+.date{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.date-text{
+    text-decoration: none;
+    font-family: 'JSongMyung-Regular-KO';
+    font-size: 20px;
+    width: 50px;
+    margin-right: 20px;
+}
+.custom-input{
+    background-color: white;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+.emotion-item{
+    background-color: white;
+    margin: 20px 0px;
+}
+.chinese{
+    font-family: 'chinese';
+    font-size: 20px;
+}
+.korean{
+    font-family: 'JSongMyung-Regular-KO';
+    font-size: 20px;
+    margin-right: 50px;
+}
+.Title{
+    width:70%;
+    height: 50px;
+    margin: 15px auto;
+    resize: none;
+    border-radius: 10px;
+}
+.Body{
+    width: 70%;
+    height: 500px;
+    margin: 15px auto;
+    resize: none;
+    border-radius: 10px;
+}
+textarea::placeholder{
+    line-height: 35px;
+    text-indent: 20px;
+}
+.SaveButton-Section{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+.SaveButton{
+    width: 10%;
+    border: none;
+    color:#000000;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: 'JSongMyung-Regular-KO';
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* .Entire {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -36,4 +127,4 @@
     width: 200px;
     height: 60px;
     font-family: 'JSongMyung-Regular-KO';
-}
+} */

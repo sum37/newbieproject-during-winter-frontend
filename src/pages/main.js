@@ -1,13 +1,11 @@
 import React from 'react';
 import './main.css';
-import { Link } from 'react-router-dom';
-import TopBanner from '../component/top';
-import GoToWritePage from '../component/gotowrite';
+import StartButton from '../component/startbutton';
 
 export default function MainPage(){
     return(
         <div>
-            <GoToWritePage />
+            <StartButton />
         </div>
     );
 }

@@ -1,21 +1,55 @@
-.Happy {
-    margin: 10px 0px 10px 300px;
-}
-.Angry {
-    margin: 10px 10px;
-}
-.Sad {
-    margin: 10px 10px;
-}
-.Joy {
-    margin: 10px 10px;
+.input-item{
+    width: 100%;
+    background-color: aqua;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 30px;;
+
 }
 .Date{
-    margin: 10px 10px;
+    display: flex;
+    margin: 20px auto;
+    background-color: blanchedalmond;
 }
-.Title {
-    margin: 10px 0px 10px 300px;
+.emotions {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    border: 2px;
 }
-.Body {
-    margin: 10px 0px 10px 300px;
+.emotions-item { 
+    width: 20%;
+    display: flex;
+    background-color: rgb(205, 228, 255);
+    margin-right: 20px;
+    text-align: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    background-color: rgb(142, 185, 138);
+
+}
+.title {
+    display: flex;
+    background-color: violet;
+    margin: 20px 0px;
+}
+.body {
+    display: flex;
+    background-color: violet;
+}
+.DeleteSection{
+    width:100%;
+    background-color: violet;
+    display: flex;
+    justify-content: flex-end;
+}
+.delete{
+    border: black;
+    background-color: transparent;
+
+
 }

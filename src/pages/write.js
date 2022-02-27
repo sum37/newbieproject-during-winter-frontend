@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import axios from 'axios';
 import './write.css';
-import { Link } from 'react-router-dom';
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import TopBanner from "../component/top";
@@ -23,6 +22,15 @@ export default function WritePage(){
     const [saveTitle, setSaveTitle] = useState("");
     const [saveBody, setSaveBody] = useState("");
     
+    const CustomInput=forwardRef(({value, onClick}, ref)=>(
+        <button
+            className="custom-input"
+            onClick={onClick}
+            ref={ref}>
+                {value}
+            </button>
+    ));
+
     const onSaveClick = () => {
         axios.post('/api/write', {
             happy: happy,
@@ -52,21 +60,28 @@ export default function WritePage(){
     return (
         <div>
             <TopBanner />
-            <div>
-                <h1 className="intro1">오늘 하루는 어땠나요?</h1>
-                <h2 className="intro2">각각의 감정을 느낀 정도를 숫자를 통해 표현해보세요.</h2>
-            </div>
-            <div className="Entire">
-                <label className="date"> 날짜: </label>
-                <ReactDatePicker
-                    dateFormat="yyyy년 MM월 dd일"
-                    maxDate={new Date()}
-                    selected={date}
-                    onChange={(date)=>setDate(date)}
-                    />
+            <div className="WritePage">
+                <div className="intro">
+                    <h1 className="intro-item1">오늘 하루는 어땠나요?</h1>
+                    <h2 className="intro-item2">각각의 감정을 느낀 정도를 숫자를 통해 표현해보세요.</h2>
+                </div>
 
-                <span className="happy">
-                    <label className="chinese1"> 喜 </label>
+                <div className="InputSection">
+                    <div className="date">
+                        <p className="date-text">날짜:</p>
+                        <ReactDatePicker
+                            showPopperArrow={false}
+                            dateFormat={"yyyy년 MM월 dd일"}
+                            maxDate={new Date()}
+                            selected={date}
+                            onChange={(date)=>setDate(date)}
+                            customInput={<CustomInput />}
+                       />
+                    </div>
+                    
+
+                <div className="emotion-item">
+                    <label className="chinese"> 喜 </label>
                     <label className="korean"> (희) </label>
                     {happys.map(f => (
                     <>
@@ -80,8 +95,8 @@ export default function WritePage(){
                         {f}
                     </>    
                     ))}
-                </span>
-                <span className="angry">
+                </div>
+                <div className="emotion-item">
                     <label className="chinese"> 怒 </label>
                     <label className="korean"> (노) </label>
                     {angrys.map(f => (
@@ -96,9 +111,8 @@ export default function WritePage(){
                         {f}
                     </>    
                     ))}
-                </span>
-                <br />
-                <span className="sad">
+                </div>
+                <div className="emotion-item">
                     <label className="chinese"> 哀 </label>
                     <label className="korean"> (애) </label>
                     {sads.map(f => (
@@ -113,8 +127,8 @@ export default function WritePage(){
                         {f}
                     </>    
                     ))}
-                </span>
-                <span className="joy">
+                </div>
+                <div className="emotion-item">
                     <label className="chinese"> 樂 </label>
                     <label className="korean"> (락) </label>
                     {joys.map(f => (
@@ -129,31 +143,27 @@ export default function WritePage(){
                         {f}
                     </>    
                     ))}
-                </span>
-        </div>
-                <br />
+                </div>
+            </div>
                 <textarea
                     className="Title"
                     placeholder="제목을 입력하세요."
                     value={saveTitle}
                     onChange={v=>setSaveTitle(v.target.value)}
                     required/>
-                <br />
                 <textarea
                     className="Body"
                     placeholder="내용을 입력하세요."
                     value={saveBody}
                     onChange={v=>setSaveBody(v.target.value)}
                     required/>
-                <br />
-                <button
-                    className="SaveButton"
-                    onClick={()=>onSaveClick()}>저장</button>
-                <div>
-                <Link to="/list">
-                    <button className="listbutton">지난 일기 보기</button>   
-                </Link>
+                <div className="SaveButton-Section">
+                    <button onClick={()=>onSaveClick()} className="SaveButton">저장</button>
                 </div>
+                
+                
+        </div>
         </div>
     );
-}
+
+                    }

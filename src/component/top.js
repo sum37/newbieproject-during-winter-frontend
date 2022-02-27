@@ -5,30 +5,17 @@ import './top.css';
 
 const TopBanner=()=>{
     return(
-        <div className="topnav">
+        <div className="topbanner">
             <div className="topbanner_left">
-                <div classNAme="topbanner_left-item">
-                    {/*여기는 일기쓰기*/}
-                    write
-                </div>
-                <div classNAme="topbanner_left-item">
-                    {/*여기는 지난 일기 보러가기*/}
-                    list
-                </div>
+                    <Link to="/write"><button className="topbanner_left-item">일기 쓰러 가기</button></Link>
+                    <Link to="/list"><button className="topbanner_left-item">지난 일기 보기</button></Link>
             </div>
             <div className="topbanner_center">
-                <div className="topbanner_center-item">
-                    {/*여기는 한자...*/}
-                    희노애락
-                </div>
-                <div className="topbanner_center-item">
-                    희노애락
-                </div>
+                    <Link to="/main"><button className="topbanner_center-chinese">喜 路 哀 樂</button></Link>
+                    <Link to="/main"><button className="topbanner_center-korean">희 노 애 락</button></Link>
             </div>
             <div className="topbanner_right">
-                <div className="topbanner_right-item">
-                    Theme
-                </div>
+                    <Link to='/custom'><button className="topbanner_right-item">테마 설정하기</button></Link>
             </div>
         </div>
     )
