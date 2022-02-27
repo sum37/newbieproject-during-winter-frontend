@@ -1,8 +1,10 @@
 import React from "react";
-import './InputItem.css';
+import styled from "styled-components";
 
 const InputItem=(props)=>{
     return(
+        <div>
+        <InputItemStyled>
         <div className="input-item">
 
             <div className="Date">날짜 : {props.date}</div>
@@ -18,12 +20,83 @@ const InputItem=(props)=>{
                 <div className="title">제목: {props.title}</div>
                 <div className="body">내용 : {props.body}</div>
             </div>
+
             <div className="DeleteSection">
                 <button onClick={props.onDeleteClick} className="delete">삭제</button>
             </div>
-        
+
+            <hr className="hr"/>
+        </div>
+            </InputItemStyled>
         </div>
     )
 }
+
+const InputItemStyled=styled.div`
+    .input-item{
+        width: 100%;
+        justify-content: center;
+        margin: 20px auto;
+        padding: 50px;
+        border-radius: 30px;
+        font-family: 'Noto Serif Korean';
+        font-size: 20px;
+        color: var(--text1);
+
+        .Date{
+            display: flex;
+            margin: 20px auto;        
+        }
+
+        .emotions{
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            
+            .emotions-item{
+                width: 20%;
+                display: flex;
+                margin-right: 20px;
+                text-align: center;            
+            }
+        }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+            color: var(--text1);
+            .title {
+                display: flex;
+                margin: 20px 0px;
+            }
+            .body {
+                display: flex;
+            }
+            
+        }
+
+        .DeleteSection{
+            width:100%;
+            display: flex;
+            justify-content: flex-end;
+
+            .delete{
+                background-color: var(--btn-color);
+                border: none;
+                border-radius: 10px;
+                font-family: 'Noto Serif Korean';
+                font-size: 20px;
+                padding: 5px 20px;
+                margin-bottom: 30px;
+                color: var(--text2);
+            }
+        }
+        
+        .hr{
+            border-top: 3px double var(--text2);
+        }
+    }
+`;
 
 export default InputItem;

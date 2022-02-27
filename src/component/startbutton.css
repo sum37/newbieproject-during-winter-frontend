@@ -1,0 +1,20 @@
+.StartButton {
+    border: none;
+    border-radius: 35px;
+    color:#4A544A;
+    background-color: transparent;
+    font-size: 35px;
+    width: 200px;
+    height: 60px;
+    font-family: 'JSongMyung-Regular-KO';
+}
+.StartButton:hover{
+    border: none;
+    border-radius: 35px;
+    color:#FFD06A;
+    background-color: transparent;
+    font-size: 35px;
+    width: 200px;
+    height: 60px;
+    font-family: 'JSongMyung-Regular-KO';
+}

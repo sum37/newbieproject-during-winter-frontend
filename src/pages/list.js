@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import InputItem from "../component/InputItem";
 import axios from 'axios';
 import TopBanner from "../component/top";
-import './list.css';
+import styled from "styled-components";
 
 function ListPage(){
     const [input, setInput] = useState([]);
@@ -40,15 +40,26 @@ function ListPage(){
     ));
     return(
         <div>
+          <ListStyled>
           <TopBanner />
             <div className="list">
               <h1>지난 기록을 살펴보세요.</h1>
               {ListUp}
             </div>
-            
+            </ListStyled>
           </div>
         
     );
 }
 
+const ListStyled = styled.div`
+  .list{
+    width: 70%;
+    margin: 20px auto;
+  }
+  h1{
+    font-family: 'Noto Serif Korean';
+    color: var(--text1);
+}
+`;
 export default ListPage;

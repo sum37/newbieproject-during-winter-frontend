@@ -10,10 +10,10 @@
     width: 70%;
 }
 .intro-item1{
-    font-family: 'JSongMyung-Regular-KO';
+    font-family: 'Noto Serif Korean';
 }
 .intro-item2{
-    font-family: 'JSongMyung-Regular-KO';
+    font-family: 'Noto Serif Korean';
 }
 .InputSection{
     width:70%;
@@ -23,54 +23,67 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 20px;
 }
 .date-text{
     text-decoration: none;
-    font-family: 'JSongMyung-Regular-KO';
+    font-family: 'Noto Serif Korean';
     font-size: 20px;
-    width: 50px;
+    width: 100px;
+    height: 100%;
     margin-right: 20px;
 }
 .custom-input{
     background-color: green;
-    width: 200px;
+    width: 220px;
     border: none;
     border-radius: 10px;
     padding: 10px;
-    font-size: 15px;
-    margin-left: 60px;
+    font-family: 'Noto Serif Korean';
+    font-size: 20px;
+    margin-left: 40px;
     cursor: pointer;
 }
-
 .emotion-item{
-    background-color: white;
-    margin: 20px 0px;
+    margin: auto;
+    font-family: 'Noto Serif Korean';
+    font-size: 20px;
+    align-items: center;
+}
+.emotion-item input{
+    margin: 0px 30px;
 }
 .chinese{
     font-family: 'chinese';
     font-size: 20px;
 }
 .korean{
-    font-family: 'JSongMyung-Regular-KO';
+    font-family: 'Noto Serif Korean';
     font-size: 20px;
     margin-right: 50px;
 }
 .Title{
     width:70%;
     height: 50px;
-    margin: 15px auto;
+    margin: 30px auto;
     resize: none;
     border-radius: 10px;
-}
+    font-size: 15px;
+    line-height: 45px;
+    text-indent: 20px;
+    }
 .Body{
     width: 70%;
     height: 500px;
     margin: 15px auto;
     resize: none;
     border-radius: 10px;
+    font-size: 15px;
+    line-height: 45px;
+    text-indent: 20px;
 }
 textarea::placeholder{
-    line-height: 35px;
+    line-height: 45px;
     text-indent: 20px;
 }
 .SaveButton-Section{
@@ -84,48 +97,10 @@ textarea::placeholder{
     color:#000000;
     background-color: transparent;
     text-decoration: none;
-    font-family: 'JSongMyung-Regular-KO';
-    font-size: 20px;
+    font-family: 'Noto Serif Korean';
+    font-size: 30px;
     margin-top: 20px;
     cursor: pointer;
     margin-bottom: 50px;
 }
-/* .Entire {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: #fcfaf1;
-}
-.header {
-    margin: 20px 0px 20px;
-    color: #4A544A; 
-    font-size: 150px;
-    font-family: 'JSongMyung-Regular-KO';
-    text-shadow: 5px 5px 0px #849d6A;
-}
-.sub-header {
-    font-family: 'chinese';
-    color: #4A544A;
-    font-size: 40px;
-    margin: 180px 0px 0px;
-}
-.login-button {
-    border: none;
-    border-radius: 35px;
-    color:#4A544A;
-    background-color: transparent;
-    font-size: 35px;
-    width: 200px;
-    height: 60px;
-    font-family: 'JSongMyung-Regular-KO';
-}
-.login-button:hover{
-    border: none;
-    border-radius: 35px;
-    color:#FFD06A;
-    background-color: transparent;
-    font-size: 35px;
-    width: 200px;
-    height: 60px;
-    font-family: 'JSongMyung-Regular-KO';
-} */
+

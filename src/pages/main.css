@@ -1,39 +1,25 @@
 .Entire {
     width: 100%;
-    height: 100%;
-    text-align: center;
-    background-color: #fcfaf1;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15%;
+    align-items: center;
+    vertical-align: middle;
 }
 .header {
-    margin: 20px 0px 20px;
     color: #4A544A; 
     font-size: 150px;
-    font-family: 'JSongMyung-Regular-KO';
+    font-family: 'Noto Serif Korean';
     text-shadow: 5px 5px 0px #849d6A;
+    text-align: center;
 }
 .sub-header {
     font-family: 'chinese';
     color: #4A544A;
     font-size: 40px;
-    margin: 180px 0px 0px;
+    text-align: center;
+    margin-bottom: 20px;
 }
-.login-button {
-    border: none;
-    border-radius: 35px;
-    color:#4A544A;
-    background-color: transparent;
-    font-size: 35px;
-    width: 200px;
-    height: 60px;
-    font-family: 'JSongMyung-Regular-KO';
-}
-.login-button:hover{
-    border: none;
-    border-radius: 35px;
-    color:#FFD06A;
-    background-color: transparent;
-    font-size: 35px;
-    width: 200px;
-    height: 60px;
-    font-family: 'JSongMyung-Regular-KO';
-}
+

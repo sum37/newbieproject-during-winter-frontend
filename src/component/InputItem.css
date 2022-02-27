@@ -1,27 +1,24 @@
 .input-item{
     width: 100%;
-    background-color: aqua;
     justify-content: center;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 30px;;
-
+    margin: 20px auto;
+    padding: 50px;
+    border-radius: 30px;
+    font-family: 'JSongMyung-Regular-KO';
+    font-size: 20px;
 }
 .Date{
     display: flex;
     margin: 20px auto;
-    background-color: blanchedalmond;
 }
 .emotions {
     display: flex;
     width: 100%;
     justify-content: flex-start;
-    border: 2px;
 }
 .emotions-item { 
     width: 20%;
     display: flex;
-    background-color: rgb(205, 228, 255);
     margin-right: 20px;
     text-align: center;
 }
@@ -29,27 +26,24 @@
     display: flex;
     flex-direction: column;
     margin: 20px auto;
-    background-color: rgb(142, 185, 138);
 
 }
 .title {
     display: flex;
-    background-color: violet;
     margin: 20px 0px;
 }
 .body {
     display: flex;
-    background-color: violet;
 }
 .DeleteSection{
     width:100%;
-    background-color: violet;
     display: flex;
     justify-content: flex-end;
 }
 .delete{
-    border: black;
     background-color: transparent;
-
-
+    font-family: 'JSongMyung-Regular-KO';
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-right: 50px;
 }
