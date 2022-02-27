@@ -19,8 +19,6 @@ const GlobalStyle= createGlobalStyle`
     }
     .light{
         --bg: #FFF8F3;
-        --bg-body: #FFF8F3;
-        --bg-menu: #F56692;
         --text1: #BDBDBD;
         --text2: #828282;
         --border: gray;
@@ -30,23 +28,26 @@ const GlobalStyle= createGlobalStyle`
     .cosmic{
         --bg: #1A1A40;
         --text1: #EF2F88;
-        --text2: #828282;
+        --text2: #F9D371;
         --border: #F9D371;
-        --theme-color: 
+        --bodytext: #FBF3E4;
+        --theme-color: #8843F2;
+        --btn-color: #F47340;
     }
     .cottoncandy{
-        --bg: #FFEBCC;
+        --bg: #FBFFE2;
         --text1: #FFAFAF;
         --text2: #FF9999;
-        --border: #FFC700;
-        --btn-color: #F2F6FF;
-        --theme-color: #FFAFAF;
+        --border: #FF9999;
+        --btn-color: #FFEBCC;
+        --theme-color: #FFEBCC;
+        --bodytext: #744500;
     }
     .chocotree{
         --bg: #E9E5D6;
         --text1: #464E2E;
         --text2: #828282;
-        --border: #FFC700;
+        --border: #828282;
         --btn-color: #ACB992;
         --theme-color: #464E2E;
     }
@@ -54,16 +55,14 @@ const GlobalStyle= createGlobalStyle`
         --bg: #E6E6E6;
         --text1: #5C7AEA;
         --text2: #14279B;
-        --border: #FFC700;
-        --btn-color: #F2F6FF;
+        --border: #14279B;
+        --btn-color: #3D56B2;
         --theme-color: #5C7AEA;
 
     }
     body{
-        background-color: var(--bg-body);
+        background-color: var(--bg);
     }
-    
-
 `;
 
 export default GlobalStyle;

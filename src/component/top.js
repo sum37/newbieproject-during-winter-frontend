@@ -1,16 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './top.css';
 import styled from "styled-components";
 import Menu from "../ThemeMenu";
-import { useEffect, useState } from "react";
-
 
 const TopBanner=()=>{
-    const [theme, setTheme] = useState('light');
-    useEffect(()=> {
-        document.documentElement.className = theme;
-    }, [theme])
+
     return(
         <BannerStyled>
             <div className="topbanner">
@@ -23,7 +17,7 @@ const TopBanner=()=>{
                     <Link to="/main"><button className="topbanner_center-korean">희 노 애 락</button></Link>
                 </div>
                 <div className="topbanner_right">
-                    <Menu setTheme={setTheme}/>
+                    <Menu />
                 </div>
             </div>
         </BannerStyled>
@@ -53,13 +47,24 @@ const BannerStyled = styled.div`
             background-color: var(--bg);
 
             .topbanner_left-item{
-                display: flex;
                 width: 100%;
                 height: 100%;
                 font-family: 'Noto Serif Korean';
                 text-align: center;
                 border: none;
                 color: var(--text1);
+                background-color: transparent;
+                font-size: 20px;
+                padding: 0px 30px;
+                cursor: pointer;
+            }
+            .topbanner_left-item:hover{
+                width: 100%;
+                height: 100%;
+                font-family: 'Noto Serif Korean';
+                text-align: center;
+                border: none;
+                color: var(--text2);
                 background-color: transparent;
                 font-size: 20px;
                 padding: 0px 30px;
@@ -75,11 +80,12 @@ const BannerStyled = styled.div`
                 width: 100%;
                 text-align: center;
                 border: none;
-                color: var(--text1);
+                color: var(--text2);
                 background-color: transparent;
                 font-family: 'chinese';
                 font-size: 20px;
                 cursor: pointer;            
+                
             }
             .topbanner_center-korean{
                 width: 100%;
@@ -90,14 +96,18 @@ const BannerStyled = styled.div`
                 text-decoration: none;
                 font-family: 'Noto Serif Korean';
                 font-size: 35px;
-                cursor: pointer;            
+                cursor: pointer;  
+                text-shadow: 1.5px 1.5px var(--text2);          
             }
         }
 
         .topbanner_right{
-
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            text-align: end;
+            padding: 0px 0px;
         }
-
     }
 `;
 export default TopBanner;

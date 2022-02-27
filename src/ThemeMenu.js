@@ -1,23 +1,37 @@
 import styled from "styled-components";
+import { useEffect, useState } from "react";
 
-function Menu({setTheme}) {
-    
+
+function Menu() {
+    const [theme, setTheme] = useState('light');
+
+    useEffect(()=> {
+        document.documentElement.className = localStorage.getItem('theme');
+        if (document.documentElement.className) {
+            setTheme(document.documentElement.className);
+        }
+    },[theme]);
+
+    const handleClick = (theme) =>{
+        setTheme(theme);
+        localStorage.setItem('theme', theme)
+    }
     return(
         <MenuStyled>
             <div className="buttons">
-                <div className="button" onClick={()=>setTheme('light')}>
+                <div className="button" onClick={()=>handleClick('light')}>
                     <div className="circlelight"/>
                 </div>
-                <div className="button" onClick={()=>setTheme('cosmic')}>
+                <div className="button" onClick={()=>handleClick('cosmic')}>
                     <div className="circlecosmic"/>
                 </div>
-                <div className="button" onClick={()=>setTheme('cottoncandy')}>
+                <div className="button" onClick={()=>handleClick('cottoncandy')}>
                     <div className="circlecottoncandy"/>
                 </div>
-                <div className="button" onClick={()=>setTheme('chocotree')}>
+                <div className="button" onClick={()=>handleClick('chocotree')}>
                     <div className="circlechocotree"/>
                 </div>
-                <div className="button" onClick={()=>setTheme('ocean')}>
+                <div className="button" onClick={()=>handleClick('ocean')}>
                     <div className="circleocean"/>
                 </div>
 
@@ -52,6 +66,16 @@ const MenuStyled = styled.div`
                 display: flex;
                 align-items: center;
             }
+            .circlelight:hover{
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 30%;
+                background-color: #FFF8F3;
+                margin-right: auto.3rem;
+                display: flex;
+                align-items: center;
+                border: 2px solid var(--border);
+            }
             .circlecosmic{
                 width: 1.5rem;
                 height: 1.5rem;
@@ -60,6 +84,17 @@ const MenuStyled = styled.div`
                 margin-right: auto.3rem;
                 display: flex;
                 align-items: center;
+            }
+            .circlecosmic:hover{
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 30%;
+                background-color: #1A1A40;
+                margin-right: auto.3rem;
+                display: flex;
+                align-items: center;
+                border: 2px solid var(--border);
+
             }
             .circlecottoncandy{
                 width: 1.5rem;
@@ -70,6 +105,16 @@ const MenuStyled = styled.div`
                 display: flex;
                 align-items: center;
             }
+            .circlecottoncandy:hover{
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 30%;
+                background-color: #FFAFAF;
+                margin-right: auto.3rem;
+                display: flex;
+                align-items: center;
+                border: 2px solid var(--border);
+            }
             .circlechocotree{
                 width: 1.5rem;
                 height: 1.5rem;
@@ -78,6 +123,17 @@ const MenuStyled = styled.div`
                 margin-right: auto.3rem;
                 display: flex;
                 align-items: center;
+            }
+            .circlechocotree:hover{
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 30%;
+                background-color: #464E2E;
+                margin-right: auto.3rem;
+                display: flex;
+                align-items: center;
+                border: 2px solid var(--border);
+
             }
             .circleocean{
                 width: 1.5rem;
@@ -88,7 +144,17 @@ const MenuStyled = styled.div`
                 display: flex;
                 align-items: center;
             }
-            
+            .circleocean:hover{
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 30%;
+                background-color: #7C83FD;
+                margin-right: auto.3rem;
+                display: flex;
+                align-items: center;
+                border: 2px solid var(--border);
+            }
+
         }
     }
 `;

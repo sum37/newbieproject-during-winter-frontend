@@ -6,7 +6,7 @@
     font-size: 35px;
     width: 200px;
     height: 60px;
-    font-family: 'JSongMyung-Regular-KO';
+    font-family: 'Noto Serif Korean';
 }
 .StartButton:hover{
     border: none;
@@ -16,5 +16,5 @@
     font-size: 35px;
     width: 200px;
     height: 60px;
-    font-family: 'JSongMyung-Regular-KO';
+    font-family: 'Noto Serif Korean';
 }

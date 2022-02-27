@@ -214,7 +214,9 @@ const WriteStyled = styled.div`
                     font-size: 20px;
                     width: 100px;
                     height: 100%;
-                    margin-right: 20px;                
+                    margin-right: 20px;        
+                    margin-bottom: 30px;
+        
                 }
             .custom-input{
                 background-color: var(--btn-color);
@@ -225,6 +227,7 @@ const WriteStyled = styled.div`
                 font-family: 'Noto Serif Korean';
                 font-size: 20px;
                 margin-left: 40px;
+                margin-bottom: 30px;
                 cursor: pointer;            
             }
             }
@@ -285,6 +288,7 @@ const WriteStyled = styled.div`
             .SaveButton{
                 width: 100px;
                 border-radius: 20px; 
+                border: none;
                 color: var(--text1);
                 background-color: var(--btn-color);
                 text-decoration: none;
