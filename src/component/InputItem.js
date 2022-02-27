@@ -11,6 +11,7 @@ const InputItem=(props)=>{
 
             <div className="emotions">
                 <span className="emotions-item">
+                    <div className="happycircle" />
                     희 : {props.happy}</span>
                 <span className="emotions-item">
                     노 : {props.angry}</span>
@@ -62,38 +63,6 @@ const InputItemStyled=styled.div`
                 display: flex;
                 margin-right: 20px;
                 text-align: center;     
-                
-                .happycircle{
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    margin-right: 15px;
-                    
-                }
-                .angrycircle{
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    background-color: red;
-                    margin-right: 15px;
-                    
-                }
-                .sadcircle{
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    background-color: red;
-                    margin-right: 15px;
-                    
-                }
-                .joycircle{
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    background-color: red;
-                    margin-right: 15px;
-                    
-                }
             }
         }
 

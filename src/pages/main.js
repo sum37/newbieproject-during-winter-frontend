@@ -38,7 +38,8 @@ const MainStyled=styled.div`
             font-size: 150px;
             font-family: 'Noto Serif Korean';
             text-shadow: 5px 5px 0px var(--sub1);
-            text-align: center;        
+            text-align: center;   
+            margin-bottom: 30px;     
         }
     }
 `;

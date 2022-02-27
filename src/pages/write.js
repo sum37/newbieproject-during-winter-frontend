@@ -1,4 +1,4 @@
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import axios from 'axios';
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -232,6 +232,7 @@ const WriteStyled = styled.div`
                 margin-bottom: 30px;
                 cursor: pointer;     
                 color: var(--text);       
+            }
             }
         }
         .emotion-item{
