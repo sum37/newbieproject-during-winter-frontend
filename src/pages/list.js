@@ -32,6 +32,7 @@ function ListPage(){
             angry={v.angry}
             sad={v.sad}
             joy={v.joy}
+            date={v.date}
             title={v.title}
             body={v.body}
             onDeleteClick={()=>onDeleteClick(v)}

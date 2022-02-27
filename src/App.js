@@ -4,21 +4,20 @@ import WritePage from './pages/write';
 import ListPage from './pages/list';
 import MainPage from './pages/main';
 import CustomPage from './pages/custom';
-import './switcher.scss';
 
 
 function App() {
   
   return (
-    <div>
-    <BrowserRouter>
+    <div className='App'>
+      <BrowserRouter>
       <Routes>
         <Route path='/main' element={<MainPage />} />
         <Route path='/write' element={<WritePage />} />
         <Route path='/list' element={<ListPage />} />
         <Route path='/custom' element={<CustomPage />} />
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter>    
     </div>
   );
 }
