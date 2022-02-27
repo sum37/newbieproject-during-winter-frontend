@@ -192,10 +192,12 @@ const WriteStyled = styled.div`
             .intro-item1{
                 font-family: 'Noto Serif Korean';
                 margin-bottom: 10px;
+                color: var(--text);
             }
             .intro-item2{
                 font-family: 'Noto Serif Korean';
                 margin-bottom: 50px;
+                color: var(--text);
             }
         }
 
@@ -216,10 +218,10 @@ const WriteStyled = styled.div`
                     height: 100%;
                     margin-right: 20px;        
                     margin-bottom: 30px;
-        
+                    color: var(--text);
                 }
             .custom-input{
-                background-color: var(--btn-color);
+                background-color: var(--sub1);
                 width: 220px;
                 border: none;
                 border-radius: 10px;
@@ -228,8 +230,8 @@ const WriteStyled = styled.div`
                 font-size: 20px;
                 margin-left: 40px;
                 margin-bottom: 30px;
-                cursor: pointer;            
-            }
+                cursor: pointer;     
+                color: var(--text);       
             }
         }
         .emotion-item{
@@ -237,6 +239,7 @@ const WriteStyled = styled.div`
             font-family: 'Noto Serif Korean';
             font-size: 20px;
             align-items: center;
+            color: var(--text);
 
             .chinese{
                 font-family: 'chinese';
@@ -262,8 +265,9 @@ const WriteStyled = styled.div`
             line-height: 40px;
             text-indent: 20px;  
             background-color: var(--bg);  
-            border: 2px solid var(--border);    
+            border: 2px solid var(--sub1);    
         }
+
         .Body{
             width: 70%;
             height: 500px;
@@ -274,12 +278,17 @@ const WriteStyled = styled.div`
             line-height: 45px;
             text-indent: 20px;    
             background-color: var(--bg);      
-            border: 2px solid var(--border);    
+            border: 2px solid var(--sub1);    
         }
+
         textarea::placeholder{
             line-height: 40px;
             text-indent: 20px;
         }
+        textarea::focus{
+            outline: border: 2px solid var(--sub2);  
+        }
+
         .SaveButton-Section{
             width: 70%;
             display: flex;
@@ -287,17 +296,32 @@ const WriteStyled = styled.div`
 
             .SaveButton{
                 width: 100px;
-                border-radius: 20px; 
+                border-radius: 10px; 
                 border: none;
-                color: var(--text1);
-                background-color: var(--btn-color);
+                color: var(--text);
+                background-color: var(--sub2);
                 text-decoration: none;
                 font-family: 'Noto Serif Korean';
-                font-size: 30px;
+                font-size: 20px;
+                margin-top: 20px;
+                cursor: pointer;
+                margin-bottom: 50px;
+                padding: 5px 20px;
+            }
+            .SaveButton:hover{
+                width: 100px;
+                border-radius: 10px; 
+                border: none;
+                color: var(--sub2);
+                background-color: var(--bg);
+                text-decoration: none;
+                font-family: 'Noto Serif Korean';
+                font-size: 20px;
                 margin-top: 20px;
                 cursor: pointer;
                 margin-bottom: 50px;
             }
+
         }
     }
 `;

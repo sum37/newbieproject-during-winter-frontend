@@ -10,10 +10,14 @@ const InputItem=(props)=>{
             <div className="Date">날짜 : {props.date}</div>
 
             <div className="emotions">
-                <span className="emotions-item">희 : {props.happy}</span>
-                <span className="emotions-item">노 : {props.angry}</span>
-                <span className="emotions-item">애 : {props.sad}</span>
-                <span className="emotions-item">락 : {props.joy}</span>
+                <span className="emotions-item">
+                    희 : {props.happy}</span>
+                <span className="emotions-item">
+                    노 : {props.angry}</span>
+                <span className="emotions-item">
+                    애 : {props.sad}</span>
+                <span className="emotions-item">
+                    락 : {props.joy}</span>
             </div>
 
             <div className="text">
@@ -41,7 +45,7 @@ const InputItemStyled=styled.div`
         border-radius: 30px;
         font-family: 'Noto Serif Korean';
         font-size: 20px;
-        color: var(--text1);
+        color: var(--text);
 
         .Date{
             display: flex;
@@ -57,7 +61,39 @@ const InputItemStyled=styled.div`
                 width: 20%;
                 display: flex;
                 margin-right: 20px;
-                text-align: center;            
+                text-align: center;     
+                
+                .happycircle{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                    
+                }
+                .angrycircle{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: red;
+                    margin-right: 15px;
+                    
+                }
+                .sadcircle{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: red;
+                    margin-right: 15px;
+                    
+                }
+                .joycircle{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: red;
+                    margin-right: 15px;
+                    
+                }
             }
         }
 
@@ -65,7 +101,7 @@ const InputItemStyled=styled.div`
             display: flex;
             flex-direction: column;
             margin: 20px auto;
-            color: var(--text1);
+            color: var(--text);
             .title {
                 display: flex;
                 margin: 20px 0px;
@@ -82,19 +118,30 @@ const InputItemStyled=styled.div`
             justify-content: flex-end;
 
             .delete{
-                background-color: var(--btn-color);
+                background-color: var(--sub2);
                 border: none;
                 border-radius: 10px;
                 font-family: 'Noto Serif Korean';
                 font-size: 20px;
                 padding: 5px 20px;
                 margin-bottom: 30px;
-                color: var(--text2);
+                color: var(--text);
+                cursor: pointer;
+            }
+            .delete:hover{
+                background-color: var(--bg);
+                border: none;
+                border-radius: 10px;
+                font-family: 'Noto Serif Korean';
+                font-size: 20px;
+                padding: 5px 20px;
+                margin-bottom: 30px;
+                color: var(--sub2);
             }
         }
         
         .hr{
-            border-top: 3px double var(--text2);
+            border-top: 3px double var(--sub2);
         }
     }
 `;

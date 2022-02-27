@@ -48,8 +48,6 @@ const MenuStyled = styled.div`
         padding: 10px 2rem;
         display: flex;
         align-items: center;
-        background-color: var(--text1);
-        border-radius: 10px;
         .button{
             display: flex;
             align-items: center;
@@ -61,7 +59,7 @@ const MenuStyled = styled.div`
                 width: 1.5rem;
                 height: 1.5rem;
                 border-radius: 30%;
-                background-color: #FFF8F3;
+                background-color: #A3E4D8;
                 margin-right: auto.3rem;
                 display: flex;
                 align-items: center;
@@ -70,17 +68,17 @@ const MenuStyled = styled.div`
                 width: 1.5rem;
                 height: 1.5rem;
                 border-radius: 30%;
-                background-color: #FFF8F3;
+                background-color: #A3E4D8;
                 margin-right: auto.3rem;
                 display: flex;
                 align-items: center;
-                border: 2px solid var(--border);
+                border: 2px solid var(--sub2);
             }
             .circlecosmic{
                 width: 1.5rem;
                 height: 1.5rem;
                 border-radius: 30%;
-                background-color: #1A1A40;
+                background-color: #EF2F88;
                 margin-right: auto.3rem;
                 display: flex;
                 align-items: center;
@@ -89,11 +87,11 @@ const MenuStyled = styled.div`
                 width: 1.5rem;
                 height: 1.5rem;
                 border-radius: 30%;
-                background-color: #1A1A40;
+                background-color: #EF2F88;
                 margin-right: auto.3rem;
                 display: flex;
                 align-items: center;
-                border: 2px solid var(--border);
+                border: 2px solid var(--sub2);
 
             }
             .circlecottoncandy{
@@ -113,7 +111,7 @@ const MenuStyled = styled.div`
                 margin-right: auto.3rem;
                 display: flex;
                 align-items: center;
-                border: 2px solid var(--border);
+                border: 2px solid var(--sub2);
             }
             .circlechocotree{
                 width: 1.5rem;
@@ -132,14 +130,14 @@ const MenuStyled = styled.div`
                 margin-right: auto.3rem;
                 display: flex;
                 align-items: center;
-                border: 2px solid var(--border);
+                border: 2px solid var(--sub2);
 
             }
             .circleocean{
                 width: 1.5rem;
                 height: 1.5rem;
                 border-radius: 30%;
-                background-color: #7C83FD;
+                background-color: #5C7AEA;
                 margin-right: auto.3rem;
                 display: flex;
                 align-items: center;
@@ -148,11 +146,11 @@ const MenuStyled = styled.div`
                 width: 1.5rem;
                 height: 1.5rem;
                 border-radius: 30%;
-                background-color: #7C83FD;
+                background-color: #5C7AEA;
                 margin-right: auto.3rem;
                 display: flex;
                 align-items: center;
-                border: 2px solid var(--border);
+                border: 2px solid var(--sub2);
             }
 
         }

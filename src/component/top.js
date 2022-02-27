@@ -52,7 +52,7 @@ const BannerStyled = styled.div`
                 font-family: 'Noto Serif Korean';
                 text-align: center;
                 border: none;
-                color: var(--text1);
+                color: var(--main);
                 background-color: transparent;
                 font-size: 20px;
                 padding: 0px 30px;
@@ -64,7 +64,7 @@ const BannerStyled = styled.div`
                 font-family: 'Noto Serif Korean';
                 text-align: center;
                 border: none;
-                color: var(--text2);
+                color: var(--sub1);
                 background-color: transparent;
                 font-size: 20px;
                 padding: 0px 30px;
@@ -80,7 +80,7 @@ const BannerStyled = styled.div`
                 width: 100%;
                 text-align: center;
                 border: none;
-                color: var(--text2);
+                color: var(--sub1);
                 background-color: transparent;
                 font-family: 'chinese';
                 font-size: 20px;
@@ -91,13 +91,13 @@ const BannerStyled = styled.div`
                 width: 100%;
                 text-align: center;
                 border: none;
-                color:var(--text1);
+                color:var(--main);
                 background-color: transparent;
                 text-decoration: none;
                 font-family: 'Noto Serif Korean';
                 font-size: 35px;
                 cursor: pointer;  
-                text-shadow: 1.5px 1.5px var(--text2);          
+                text-shadow: 1.5px 1.5px var(--sub1);          
             }
         }
 

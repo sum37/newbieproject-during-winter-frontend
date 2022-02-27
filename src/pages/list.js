@@ -59,7 +59,7 @@ const ListStyled = styled.div`
   }
   h1{
     font-family: 'Noto Serif Korean';
-    color: var(--text1);
+    color: var(--text);
 }
 `;
 export default ListPage;

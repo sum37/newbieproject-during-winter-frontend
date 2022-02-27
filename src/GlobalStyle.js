@@ -9,56 +9,49 @@ const GlobalStyle= createGlobalStyle`
     }
     :root{
         --bg: #E9E5D6;
-        --bg-body: #fff;
-        --bg-menu: #F56692;
-        --text1: #BDBDBD;
-        --text2: #828282;
-        --border: #FFC700;
-        --btn-color: #F2F6FF;
-        --theme-color: #464E2E;
+        --main: #464E2E;
+        --sub1: #ACB992;
+        --sub2: #ACB992;
+        --text: #362706;
+        --happy0: red;
+        --happy2: blue;
     }
     .light{
         --bg: #FFF8F3;
-        --text1: #BDBDBD;
-        --text2: #828282;
-        --border: gray;
-        --btn-color: #F2F6FF;
-        --theme-color: #FFF8F3;
+        --main: #74D6C8;
+        --sub1: #FEB0E4;
+        --sub2: #FFAFAF;
+        --text: #1C6DD0;
+        --happy0: red;
+        --happy2: blue;
     }
     .cosmic{
         --bg: #1A1A40;
-        --text1: #EF2F88;
-        --text2: #F9D371;
-        --border: #F9D371;
-        --bodytext: #FBF3E4;
-        --theme-color: #8843F2;
-        --btn-color: #F47340;
+        --main: #EF2F88;
+        --sub1: #F9D371;
+        --sub2: #F47340;
+        --text: #FFF8F3;
     }
     .cottoncandy{
-        --bg: #FBFFE2;
-        --text1: #FFAFAF;
-        --text2: #FF9999;
-        --border: #FF9999;
-        --btn-color: #FFEBCC;
-        --theme-color: #FFEBCC;
-        --bodytext: #744500;
+        --bg: #FFEBCC;
+        --main: #FFAFAF;
+        --sub1: #FFBD87;
+        --sub2: #FFCCAA;
+        --text: #744500;
     }
     .chocotree{
         --bg: #E9E5D6;
-        --text1: #464E2E;
-        --text2: #828282;
-        --border: #828282;
-        --btn-color: #ACB992;
-        --theme-color: #464E2E;
+        --main: #464E2E;
+        --sub1: #ACB992;
+        --sub2: #8C9F69;
+        --text: #362706;
     }
     .ocean{
-        --bg: #E6E6E6;
-        --text1: #5C7AEA;
-        --text2: #14279B;
-        --border: #14279B;
-        --btn-color: #3D56B2;
-        --theme-color: #5C7AEA;
-
+        --bg: #FFF8F3;
+        --main: #5C7AEA;
+        --sub1: #96BAFF;
+        --sub2: #3D56B2;
+        --text: #10207E;
     }
     body{
         background-color: var(--bg);

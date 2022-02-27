@@ -27,17 +27,17 @@ const MainStyled=styled.div`
         
         .sub-header{
             font-family: 'chinese';
-            color: #4A544A;
+            color: var(--sub1);
             font-size: 40px;
             text-align: center;
             margin-bottom: -20px;
         }
 
         .header{
-            color: #4A544A; 
+            color: var(--main); 
             font-size: 150px;
             font-family: 'Noto Serif Korean';
-            text-shadow: 5px 5px 0px #849d6A;
+            text-shadow: 5px 5px 0px var(--sub1);
             text-align: center;        
         }
     }
