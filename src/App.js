@@ -5,11 +5,11 @@ import ListPage from './pages/list';
 import MainPage from './pages/main';
 import styled from 'styled-components';
 import React from "react";
-
 function App() {
   return (
     <AppStyled>
-    <div className='App'>     
+    <div className='App'> 
+
       <BrowserRouter>
       <Routes>
         <Route path='/main' element={<MainPage />} />
